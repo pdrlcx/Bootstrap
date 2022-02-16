@@ -25,9 +25,11 @@ function validaEmail() {
   if (email.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
     txtEmail.style.color = "#26733a";
     txtEmail.innerHTML = "E-mail ok ✔";
+    emailOk = true;
   } else {
     txtEmail.style.color = "#732626";
     txtEmail.innerHTML = "E-mail inválido ❌";
+    emailOk = false;
   }
 }
 function validaMensagem() {
@@ -46,6 +48,7 @@ function validaMensagem() {
   }
 }
 function enviar() {
+  debugger;
   if (nomeOk == true && emailOk == true && mensagemOk == true) {
     alert("Recado enviado com sucesso!");
   } else {
