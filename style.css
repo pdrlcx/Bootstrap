@@ -1,0 +1,19 @@
+#imgFundo {
+    background-image: url(./assets/imagens/imgFundo1.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tamImg {
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.wh-social {
+    width: 40px;
+}
+
